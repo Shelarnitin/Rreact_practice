@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CarControl from "./Car";
 
 function SpaceShipControl () {
   const [status , setStatus] = useState('stop')
@@ -11,6 +12,7 @@ function SpaceShipControl () {
     <>
       <h1>Spaceship Status : {status}</h1>
       <button onClick={launchSequence}>launch</button>
+      <CarControl/>
     </>
   )
 }
