@@ -1,4 +1,6 @@
 import { useState } from "react";
+import BooksList from './Books.jsx'
+import { useEffect } from "react";
 
 function SpaceShip () {
   const [fuel, setFuel] = useState(5);
@@ -7,14 +9,20 @@ function SpaceShip () {
     setFuel(prevFuel => (prevFuel > 0 ? prevFuel -1 : 0))
   }
 
-  if(fuel < 2){
-    alert("Low Fuel...!")
-  }
+  useEffect(() => {
+    if (fuel < 2) {
+      alert("Low Fuel...!");
+    }
+    if (fuel == 0){
+      alert("Fuel Over")
+    }
+  }, [fuel]);
 
   return (
     <>
       <h1>Fuel Level : {fuel}</h1>
       <button onClick={burnFuel}>bure Fuel</button>
+      <BooksList/>
     </>
   )
 }
