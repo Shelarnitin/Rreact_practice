@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import MyComponent from './Async/Async.jsx'
 import PhotoCounter from './Photo/PhotoCounter.jsx'
+import Gallery from "./Portfolio/Gallery.jsx";
+
 
 function CounterApp() {
   const [counter, setCounter] = useState(0)
@@ -20,7 +22,8 @@ function CounterApp() {
       <p>Counter : ${counter}</p>
       <button onClick={IT}>Add Count</button> <hr />
       <MyComponent/> <hr />
-      <PhotoCounter/>
+      <PhotoCounter/> <hr />
+      <Gallery/>
     </div>
   )
 }
