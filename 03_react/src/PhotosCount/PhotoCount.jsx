@@ -6,6 +6,8 @@ const PhotoCount = () => {
   useEffect(() => {
     const addedPhotos = ['sunset.jpg', 'mountain.png']
     setPhotos(addedPhotos)
+
+    return () => setPhotos([])
   }, [])
 
   return (
