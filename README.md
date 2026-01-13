@@ -19,6 +19,10 @@
 * Fuel Status
 ** Books.jsx
 * books Render
+** PhotosCount
+* Name.jsx
+* PhotoCount.jsx
+* Shopping.jsx
 
 # 04_react
 ** Async.jsx
