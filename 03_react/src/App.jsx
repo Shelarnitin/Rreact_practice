@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import PhotoCount from "./PhotosCount/PhotoCount.jsx";
 import Shopping from "./PhotosCount/Shopping.jsx";
 import Name from "./PhotosCount/Name.jsx";
+import GroceryForm from "./Grocery/Grocery.jsx";
 
 function SpaceShip () {
   const [fuel, setFuel] = useState(5);
@@ -28,7 +29,8 @@ function SpaceShip () {
       <BooksList/> <hr />
       <PhotoCount/>  <hr />
       <Shopping/> <hr />
-      <Name/>
+      <Name/> <hr />
+      <GroceryForm/> <hr />
     </>
   )
 }
