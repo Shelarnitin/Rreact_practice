@@ -3,6 +3,7 @@ import BooksList from './Books.jsx'
 import { useEffect } from "react";
 import PhotoCount from "./PhotosCount/PhotoCount.jsx";
 import Shopping from "./PhotosCount/Shopping.jsx";
+import Name from "./PhotosCount/Name.jsx";
 
 function SpaceShip () {
   const [fuel, setFuel] = useState(5);
@@ -26,7 +27,8 @@ function SpaceShip () {
       <button onClick={burnFuel}>bure Fuel</button>
       <BooksList/> <hr />
       <PhotoCount/>  <hr />
-      <Shopping/>
+      <Shopping/> <hr />
+      <Name/>
     </>
   )
 }
