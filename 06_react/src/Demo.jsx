@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-function Greeting () {
+function Greet() {
   const nameRef = useRef(null)
   const [name, setName] = useState("")
 
@@ -12,9 +12,10 @@ function Greeting () {
   return (
     <>
       <h1>Hello, {name}</h1>
-      <input ref={nameRef} type="text" />
+      <input type="text" ref={nameRef} />
       <button onClick={showName}>Greet</button>
     </>
   )
 }
-export default Greeting;
+
+export default Greet
