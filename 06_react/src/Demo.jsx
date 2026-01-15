@@ -1,21 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
-import { useRef } from 'react'
+import React, { useRef, useState } from "react";
 
-const Greeting = () => {
-    const nameRef = useRef(null)
-    const[name, setName] = useState("")
+function Greeting () {
+  const nameRef = useRef(null)
+  const [name, setName] = useState("")
 
-    const showName = () => {
-        setName(nameRef.current.value)
-    }
+
+  function showName () {
+    setName(nameRef.current.value)
+  }
+
   return (
-    <div>
-        <h1>Welcome, {name}</h1>
-        <input ref={nameRef} type="text" />
-        <button onClick={showName}>Greet</button>
-    </div>
+    <>
+      <h1>Hello, {name}</h1>
+      <input ref={nameRef} type="text" />
+      <button onClick={showName}>Greet</button>
+    </>
   )
 }
-
-export default Greeting
+export default Greeting;
