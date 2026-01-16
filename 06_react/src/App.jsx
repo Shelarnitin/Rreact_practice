@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import UnControlled from './Component/UnControlled'
 
 function Greeting() {
   const nameRef = useRef(null)
@@ -12,7 +13,8 @@ function Greeting() {
     <div>
       <h1>hello, {name}</h1>
       <input ref={nameRef} type="text" />
-      <button onClick={showName}>Greet</button>
+      <button onClick={showName}>Greet</button> <hr />
+      <UnControlled/>
     </div>
   )
 }
