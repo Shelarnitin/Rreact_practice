@@ -12,7 +12,7 @@ function Greeting() {
   return (
     <div>
       <h1>hello, {name}</h1>
-      <input ref={nameRef} type="text" />
+      <input placeholder='Enter Your Name' ref={nameRef} type="text" />
       <button onClick={showName}>Greet</button> <hr />
       <UnControlled/>
     </div>
