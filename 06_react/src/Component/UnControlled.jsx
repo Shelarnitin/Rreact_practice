@@ -11,7 +11,7 @@ function UnControlled() {
   return (
     <div>
         <form onSubmit={handleSubmit}>
-        <input type="text" ref={inputRef}/>
+        <input placeholder='Enter Your Name' type="text" ref={inputRef}/>
         <button type='submit'>Submit</button>
         </form>
     </div>
