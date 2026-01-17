@@ -1,21 +1,18 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 
-function Greet() {
-  const nameRef = useRef(null)
-  const [name, setName] = useState("")
+function NumberArray () {
+  const [ name, setName] = useState([1,2,3])
 
-
-  function showName () {
-    setName(nameRef.current.value)
+  const addNumber = () => {
+    setName([...name,4])
   }
 
-  return (
+  return(
     <>
-      <h1>Hello, {name}</h1>
-      <input type="text" ref={nameRef} />
-      <button onClick={showName}>Greet</button>
+      <h1>Numbers: {name.join(', ')}</h1>
+      <button onClick={addNumber}>Add 4</button>
     </>
   )
 }
 
-export default Greet
+export default NumberArray

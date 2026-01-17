@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import UnControlled from './Component/UnControlled'
 import Controlled from './Component/Controlled'
 import Birthday from './Birthday/Birthday'
+import NumberArray from './Demo'
 
 function Greeting() {
   const nameRef = useRef(null)
@@ -18,7 +19,8 @@ function Greeting() {
       <button onClick={showName}>Greet</button> <hr />
       <UnControlled/> <hr />
       <Controlled/> <hr />
-      <Birthday/> 
+      <Birthday/> <hr />
+      <NumberArray/> 
     </div>
   )
 }
