@@ -1,6 +1,7 @@
 // const { useState } "react";
 import { useState } from "react"
 import  Counter  from './Counter.jsx'
+import Twice from "./Twice.jsx"
 
 
 function App () {
@@ -10,7 +11,8 @@ function App () {
     <div>
       <h1>Counter : {count}</h1>
       <button onMouseOver={() => setCount ((count) => count + 1)}>Increment</button>
-      <Counter/>
+      <Counter/> <hr />
+      <Twice/>
     </div>
   )
 }
