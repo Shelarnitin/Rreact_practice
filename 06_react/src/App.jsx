@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import UnControlled from './Component/UnControlled'
 import Controlled from './Component/Controlled'
+import Birthday from './Birthday/Birthday'
 
 function Greeting() {
   const nameRef = useRef(null)
@@ -16,7 +17,8 @@ function Greeting() {
       <input placeholder='Enter Your Name' ref={nameRef} type="text" />
       <button onClick={showName}>Greet</button> <hr />
       <UnControlled/> <hr />
-      <Controlled/> 
+      <Controlled/> <hr />
+      <Birthday/> 
     </div>
   )
 }
