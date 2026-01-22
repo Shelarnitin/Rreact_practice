@@ -3,6 +3,7 @@ import UnControlled from './Component/UnControlled'
 import Controlled from './Component/Controlled'
 import Birthday from './Birthday/Birthday'
 import NumberArray from './Demo'
+import PhoneBook from './Component/Form'
 
 function Greeting() {
   const nameRef = useRef(null)
@@ -20,7 +21,8 @@ function Greeting() {
       <UnControlled/> <hr />
       <Controlled/> <hr />
       <Birthday/> <hr />
-      <NumberArray/> 
+      <NumberArray/> <hr />
+      <PhoneBook/> 
     </div>
   )
 }
