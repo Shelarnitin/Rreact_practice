@@ -44,14 +44,14 @@ function PhoneBook() {
           placeholder="First Name"
           value={formData.firstName}
           onChange={handleChange}
-        />
+        /> <br />
 
         <input
           name="lastName"
           placeholder="Last Name"
           value={formData.lastName}
           onChange={handleChange}
-        />
+        /> <br />
 
         <input
           name="phone"
