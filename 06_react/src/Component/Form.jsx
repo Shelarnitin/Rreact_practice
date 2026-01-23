@@ -3,8 +3,7 @@ import React, { useState } from "react";
 function PhoneBook() {
   const [formData, setFormData] = useState({
     firstName: "Coder",
-    lastName: "Byte",
-    phone: "8885559999"
+    
   });
 
   const [contacts, setContacts] = useState([]);
@@ -22,7 +21,7 @@ function PhoneBook() {
     e.preventDefault();
 
     const updatedContacts = [...contacts, formData].sort(
-      (a, b) => a.lastName.localeCompare(b.lastName)
+      (a, b) => a.firstName.localeCompare(b.firstName)
     );
 
     setContacts(updatedContacts);
@@ -58,7 +57,7 @@ function PhoneBook() {
           placeholder="Phone Number"
           value={formData.phone}
           onChange={handleChange}
-        />
+        /> <hr />
 
         <button type="submit">Add</button>
       </form>
