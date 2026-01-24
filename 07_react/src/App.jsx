@@ -1,6 +1,7 @@
 // const { useState } = require("react");
 import { useState } from "react"
 import PerformOnThree from "./Components/Toggle"
+import BirthdayGuestBook from "./Components/Greeting"
 // import React {useState} from "react"
 
 function PerformOnNumbers () {
@@ -22,7 +23,8 @@ function PerformOnNumbers () {
       <h1>Numbers : {number.join(', ')}</h1>
       <button onClick={RemoveFour}>Remove</button>
       <button onClick={AddFour}>Add</button>
-      <PerformOnThree/>
+      <PerformOnThree/> <hr />
+      <BirthdayGuestBook/> 
     </>
   )
 }
