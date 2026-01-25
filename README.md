@@ -44,3 +44,7 @@
 
 ** App.jsx
 * Greet by using useRef()
+
+# 07_react
+** Greeting.jsx
+* greetings
