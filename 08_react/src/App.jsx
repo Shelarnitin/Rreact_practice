@@ -6,6 +6,7 @@ function App() {
       <RobotPart PartName="Head" />
       <RobotPart PartName="Arms" />
       <RobotPart PartName="Legs" />
+      <RobotPart PartName="Hand" />
     </div>
   );
 }
