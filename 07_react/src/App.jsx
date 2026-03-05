@@ -21,7 +21,7 @@ function PerformOnNumbers () {
   return(
     <>
       <h1>Numbers : {number.join(', ')}</h1>
-      <button className="blue" onClick={RemoveFour}>Remove</button>
+      <button onClick={RemoveFour}>Remove</button>
       <button onClick={AddFour}>Add</button>
       <PerformOnThree/> <hr />
       <BirthdayGuestBook/> 
