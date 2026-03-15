@@ -13,8 +13,8 @@ function PerformOnNumbers () {
   }
 
   const AddFour = () => {
-    if(!number.includes(4)){
-      setNumber([...number, 4])
+    if(!number.includes(3)){
+      setNumber([...number, 3])
     }
   }
 
